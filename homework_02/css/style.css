@@ -13,8 +13,8 @@ write your code here
 
 */
 
-@media screen (max-width: 1140px) {
-    .tm-sidebar {
+@media screen and (max-height: 835px) and (max-width: 1140px) {
+    .container {
         display: none;
     }
 }
