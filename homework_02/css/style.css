@@ -92,6 +92,9 @@ write your code here
     .blocks div ul li div p::first-letter {
         color: black !important;
     }
+    .pad p {
+        text-indent: 30px;
+    }
 }
 
 @media print {
