@@ -13,13 +13,93 @@ write your code here
 
 */
 
+@media screen (max-width: 1140px and max-height: 835px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media screen {
+    button.submit-btn {
+        color: red;
+    }
+    .form-control {
+        color: red;
+    }
+    .gallery-container .box {
+        border-right: none !important;
+        border-top: none !important;
+    }
+    .gallery-container .box :nth-child(3n) {
+        border-right: 1px solid silver !important;
+    }
+    .gallery-container .box:nth-child(-n+3){
+        border-top: 1px solid silver !important;
+    }
+    .gallery-container {
+        border-right: 1px solid silver;
+    }
+    .heading h2 {
+        color: #76cdd7;
+        text-align: center;
+
+    }
+    p::first-letter {
+        font-size: 30px;
+        color: #76cdd7;
+    }
+    .tm-sidebar, section {
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .gallery-container a img {
+        border: 2px solid silver;
+    }
+
+    #ideas h2 {
+        color: gainsboro!important;
+    }
+
+    h2 + p:first-of-type {
+        font-style: italic;
+    }
+    .text::after {
+        content: "New";
+        vertical-align: super;
+        font-size: 10px;
+        color: red;
+    }
+    .tm-nav-item {
+        border-bottom: 1px solid silver;
+    }
+    .tm-nav-item:last-child {
+        border: none;
+    }
+    ol li a {
+        color: black;
+    }
+    ol li a:visited {
+        color: silver;
+    }
+    ol li a:hover {
+        color: #76cdd7;
+    }
+
+    .blocks .box-bg {
+        background-color: #f2f2f2;
+    }
+
+    .blocks div ul li div p::first-letter {
+        color: black !important;
+    }
+}
+
 @media print {
     nav {
         display: none;
         width: 0px;
     }
     .tm-section-description{
-        border: 2px double red;
         width: 550px;
     }
     .tm-banner-inner{
@@ -48,7 +128,7 @@ write your code here
         margin-right: auto;
     }
     .flex-item img {
-                display: block;
+        display: block;
         margin-left: auto;
         margin-right: auto;
     }
@@ -57,22 +137,7 @@ write your code here
         margin: 0px;
         height: 20%;
     }
-    #about {
-        display: none;
-    }
-    .heading {
-        display: none;
-    }
-    .blocks {
-        display: none;
-    }
-    #ideas {
-        display: none;
-    }
-    #contact {
-        display: none;
-    }
-    .img-fluid {
+    #about, .img-fluid, .heading, .blocks, #ideas, #contact {
         display: none;
     }
 }
