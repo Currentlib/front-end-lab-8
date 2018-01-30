@@ -1,0 +1,104 @@
+h1 {
+    color: $heading;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: $uppercase;
+}
+h2 {
+    color: $heading;
+}
+body {
+    color: $text_color;
+    background-color: $page_bg;
+}
+#content {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 960px;
+    margin: 0 auto;
+    background-color: $content_bg;
+}
+.brief {
+    overflow:auto;
+    color: black;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: $brief_margin_bot;
+    float: left;
+    box-sizing: border-box;
+    width: $brief_width;
+    background-color: $block_bg;
+}
+.img-right {
+    float: right;
+    margin-bottom: 5px;
+    padding: 2px;
+    border: 2px solid $heading;
+    margin-left: 20px;
+}
+.img-left {
+    float: left;
+    margin-bottom: 5px;
+    padding: 2px;
+    border: 2px solid $heading;
+    margin-right: 20px;
+}
+a {
+    color: $link;
+}
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin-bottom: 60px;
+    th {
+        background-color: $table_head;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-align: left;
+        padding: 10px;
+        padding-left: 20px;
+        color: black;
+        border-right: 1px solid white;
+        &:last-of-type {
+            border-right: 0; }
+    }
+    td {
+        padding: 10px;
+        padding-left: 20px;
+        border-bottom: 1px solid $table_head;
+        background-color: $table_bg;
+    }
+    caption {
+        text-align: right;
+        color: black;
+    }
+
+}
+input, textarea {
+    border: 1px solid $table_head;
+    padding: 5px;
+    width: 100%;
+}
+.left {
+    display: inline-block;
+    float: left;
+    width: 49%;
+}
+.right {
+    display: inline-block;
+    float: right;
+    width: 49%;
+}
+.color {
+    color: $contact_text;
+}
+input[type="button"] {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: $send_btn;
+    border: 1px solid $send_btn;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: $content_bg;
+}
