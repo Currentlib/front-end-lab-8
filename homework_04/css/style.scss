@@ -1,0 +1,244 @@
+@import "variables";
+@media (max-width:900px) {
+    body {
+        display: none;
+    }
+}
+@media screen {
+body {
+    font-family: 'Open Sans';
+    margin: 0 auto;
+    height: 100%;
+    background-color: $content_bg;
+}
+.main_head {
+	background-image: url(../img/apples.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo, nav {
+    padding: 40px;
+}
+.logo {
+    float: left;
+    padding-left: 10%;
+    color: white;
+    letter-spacing: 0.2em;
+}
+.top_block {
+    display: inline;
+}
+.main_text {
+    text-align: center;
+    padding-top: 13%;
+    color: white;
+    .big_logo {
+        letter-spacing: 0.3em;
+        font-size: 2.5em;
+        i {
+        font-size: 2em;
+        }
+    }
+    .sub_logo {
+        margin-top: -2%;
+        font-size: 0.8em;
+    }
+}
+nav {
+    float: right;
+    margin-right: 10%;
+    a {
+        text-decoration: none;
+        margin: 20px;
+        color: white;
+        padding: 5px;
+        padding-bottom: 10px;
+        &.active {
+            border-bottom: 2px solid $nav_border;
+        }
+    }
+}
+.button {
+    text-align: center;
+}
+.read_more {
+    color: $time;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px white solid;
+    width: 200px;
+    padding: 15px;
+    margin: 5%;
+}
+.content_head {
+    overflow: auto;
+    background-color: white;
+    padding: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .left_col {
+        float: left;
+        width: 50%;
+        font-size: 20px;
+    }
+    .right_col {
+        float: right;
+        width: 50%;
+        font-size: 12px;
+    }
+}
+.content {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    p {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 20px;
+    }
+}
+.gallery {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 30px;
+    > div {
+        border: 2px white solid;
+    }
+    .france {
+        background-image: url(../img/sample.jpg);
+        grid-column: 1/3;
+        grid-row: 1;
+        position: relative;
+    }
+    .budapest:nth-child(2) {
+        background-image: url(../img/sample2.jpg);
+        grid-column: 3/4;
+        grid-row: 1;
+        position: relative;
+    }
+    .budapest:nth-child(3) {
+        background-image: url(../img/sample2.jpg);
+        grid-column: 1/2;
+        grid-row: 2;
+        position: relative;
+    }
+    .america {
+        background-image: url(../img/sample3.jpg);
+        grid-column: 2/4;
+        grid-row: 2;
+        position: relative;
+    }
+    .subscribe {
+        background-color: white;
+        grid-column: 1/4;
+        grid-row: 3;
+        margin-top: 100px;
+        padding: 75px 0 0 0;
+        span {
+            font-size: 25px;
+            margin-right: 50px;
+        }
+    }
+}
+input[type="text"] {
+    background-color: $content_bg;
+    border: 1px solid $subscribe_btn;
+    padding: 15px 200px 15px 25px;
+    margin-right: -5px;
+}
+input[type="button"] {
+    background-color: $subscribe_btn;
+    padding: 15px 30px 15px 30px;
+    color: white;
+    border: 1px solid $subscribe_btn;
+    margin: 0;
+}
+.like {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 14px;
+    float: right;
+    padding: 5px 10px 5px 10px;
+    margin: 30px;
+    border: 2px white solid;
+}
+.img_text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5));
+    span {
+        letter-spacing: 0.04em;
+        float: left;
+        padding-top: 50px;
+        padding-left: 35px;
+        color: white;
+    }
+}
+.main_footer {
+    background-color: white;
+    margin-top: 150px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    .columns {
+        display: grid;
+        grid-template-columns: 150px 200px 150px 260px;
+        grid-template-rows: 300px;
+        grid-gap: 70px;
+        margin:0 auto;
+        max-width: 1100px;
+        width: 100%;
+        .column {
+            input[type="text"] {
+                color: $footer_text;
+                font-style: italic;
+                padding: 15px 10px 15px 15px;
+                margin-top: 10px;
+            }
+            input[type="button"] {
+                padding: 15px 15px 15px 15px;
+            }
+            .text {
+                color: $footer_text;
+                text-align: justify;
+            }
+            .header {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .time {
+                color: $time;
+            }
+        }
+        .column:nth-child(1) {
+            grid-column: 1/2;
+            grid-row: 1;
+            position: relative;
+        }
+        .column:nth-child(2) {
+            grid-column: 2/3;
+            grid-row: 1;
+            position: relative;
+        }
+        .column:nth-child(3) {
+            grid-column: 3/4;
+            grid-row: 1;
+            position: relative;
+            .text {
+                font-style: italic;
+            }
+        }
+        .column:nth-child(4) {
+            grid-column: 4/5;
+            grid-row: 1;
+            position: relative;
+        }
+    }
+}
+
+}
