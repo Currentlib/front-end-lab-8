@@ -143,8 +143,9 @@ nav {
 input[type="text"] {
     background-color: $content_bg;
     border: 1px solid $subscribe_btn;
-    padding: 15px 200px 15px 25px;
+    padding: 15px 0 15px 25px;
     margin-right: -4px;
+    width: 30%;
 }
 input[type="button"] {
     background-color: $subscribe_btn;
