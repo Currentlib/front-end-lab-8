@@ -152,7 +152,7 @@ input[type="button"] {
     padding: 15px 30px 15px 30px;
     color: white;
     border: 1px solid $subscribe_btn;
-    margin-left: -4px;
+    margin-left: -3px;
 }
 .like {
     background-color: rgba(0,0,0,0.5);
@@ -199,13 +199,22 @@ input[type="button"] {
             input[type="text"] {
                 color: $footer_text;
                 font-style: italic;
-                width: 55%;
-                padding: 5% 0 5% 3%;
-                margin-top: 10px;
+                width: 67%;
+                height: 50px;
+                padding: auto;
+//                margin-top: 10px;
+//                float: left;
+                box-sizing: border-box;
+                vertical-align: bottom;
             }
             input[type="button"] {
-                width: 40%;
-                padding: 5%;
+                float: right;
+                position: relative;
+                width: 35%;
+                height: 50px;
+                vertical-align: bottom;
+                padding-left: 8%;
+
             }
             .text {
                 color: $footer_text;
@@ -247,6 +256,6 @@ input[type="button"] {
     .navbtm {
         color: black;
         text-decoration: none;
-        margin: 20px;
+        margin: 20px 0 20px 40px;
     }
 }

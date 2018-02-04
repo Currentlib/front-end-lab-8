@@ -162,7 +162,7 @@ input[type="button"] {
   padding: 15px 30px 15px 30px;
   color: white;
   border: 1px solid #343638;
-  margin-left: -4px;
+  margin-left: -3px;
 }
 
 .like {
@@ -215,13 +215,19 @@ input[type="button"] {
 .main_footer .columns .column input[type="text"] {
   color: #9E9E9E;
   font-style: italic;
-  width: 55%;
-  padding: 5% 0 5% 3%;
-  margin-top: 10px;
+  width: 67%;
+  height: 50px;
+  padding: auto;
+  box-sizing: border-box;
+  vertical-align: bottom;
 }
 .main_footer .columns .column input[type="button"] {
-  width: 40%;
-  padding: 5%;
+  float: right;
+  position: relative;
+  width: 35%;
+  height: 50px;
+  vertical-align: bottom;
+  padding-left: 8%;
 }
 .main_footer .columns .column .text {
   color: #9E9E9E;
@@ -262,5 +268,5 @@ input[type="button"] {
 .bottom_menu .navbtm {
   color: black;
   text-decoration: none;
-  margin: 20px;
+  margin: 20px 0 20px 40px;
 }
