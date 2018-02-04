@@ -1,10 +1,5 @@
 @import "variables";
-@media (max-width:900px) {
-    body {
-        display: none;
-    }
-}
-@media screen {
+
 body {
     font-family: 'Open Sans';
     margin: 0 auto;
@@ -15,6 +10,7 @@ body {
 	background-image: url(../img/apples.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
+    height: 700px;
 }
 .logo, nav {
     padding: 40px;
@@ -60,6 +56,8 @@ nav {
 }
 .button {
     text-align: center;
+    margin: 10% 0 5% 0;
+
 }
 .read_more {
     color: $time;
@@ -67,7 +65,6 @@ nav {
     border: 2px white solid;
     width: 200px;
     padding: 15px;
-    margin: 5%;
 }
 .content_head {
     overflow: auto;
@@ -147,14 +144,14 @@ input[type="text"] {
     background-color: $content_bg;
     border: 1px solid $subscribe_btn;
     padding: 15px 200px 15px 25px;
-    margin-right: -5px;
+    margin-right: -4px;
 }
 input[type="button"] {
     background-color: $subscribe_btn;
     padding: 15px 30px 15px 30px;
     color: white;
     border: 1px solid $subscribe_btn;
-    margin: 0;
+    margin-left: -4px;
 }
 .like {
     background-color: rgba(0,0,0,0.5);
@@ -186,22 +183,28 @@ input[type="button"] {
     margin-left: auto;
     margin-right: auto;
     .columns {
-        display: grid;
-        grid-template-columns: 150px 200px 150px 260px;
-        grid-template-rows: 300px;
-        grid-gap: 70px;
-        margin:0 auto;
-        max-width: 1100px;
-        width: 100%;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: justify;
+        text-align-last: justify;
         .column {
+            text-align: left;
+            text-align-last: left;
+            width: 25%;
+            display: inline-block;
+            vertical-align: top;
             input[type="text"] {
                 color: $footer_text;
                 font-style: italic;
-                padding: 15px 10px 15px 15px;
+                width: 55%;
+                padding: 5% 0 5% 3%;
                 margin-top: 10px;
             }
             input[type="button"] {
-                padding: 15px 15px 15px 15px;
+                width: 40%;
+                padding: 5%;
             }
             .text {
                 color: $footer_text;
@@ -210,35 +213,39 @@ input[type="button"] {
             .header {
                 font-weight: bold;
                 font-size: 20px;
+                text-align: left;
             }
             .time {
                 color: $time;
+                text-align: left;
             }
-        }
-        .column:nth-child(1) {
-            grid-column: 1/2;
-            grid-row: 1;
-            position: relative;
         }
         .column:nth-child(2) {
-            grid-column: 2/3;
-            grid-row: 1;
-            position: relative;
+            width: 16%;
         }
         .column:nth-child(3) {
-            grid-column: 3/4;
-            grid-row: 1;
-            position: relative;
-            .text {
-                font-style: italic;
-            }
-        }
-        .column:nth-child(4) {
-            grid-column: 4/5;
-            grid-row: 1;
-            position: relative;
+            width: 16%;
         }
     }
 }
-
+.bottom_menu {
+    border-top: 1px solid $time;
+    padding: 20px 0 20px 0;
+    margin: 100px 0 20px 0;
+    .copyright {
+        text-align: left;
+        text-align-last: left;
+        float: left;
+        color: $footer_text;
+    }
+    .nav_bottom {
+        text-align: right;
+        text-align-last: right;
+        float: right;
+    }
+    .navbtm {
+        color: black;
+        text-decoration: none;
+        margin: 20px;
+    }
 }
