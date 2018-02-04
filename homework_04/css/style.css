@@ -215,7 +215,7 @@ input[type="button"] {
 .main_footer .columns .column input[type="text"] {
   color: #9E9E9E;
   font-style: italic;
-  width: 67%;
+  width: 60%;
   height: 50px;
   padding: auto;
   box-sizing: border-box;
@@ -224,10 +224,10 @@ input[type="button"] {
 .main_footer .columns .column input[type="button"] {
   float: right;
   position: relative;
-  width: 35%;
+  width: 40%;
   height: 50px;
   vertical-align: bottom;
-  padding-left: 8%;
+  padding-right: auto;
 }
 .main_footer .columns .column .text {
   color: #9E9E9E;

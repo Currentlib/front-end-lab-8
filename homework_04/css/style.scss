@@ -199,7 +199,7 @@ input[type="button"] {
             input[type="text"] {
                 color: $footer_text;
                 font-style: italic;
-                width: 67%;
+                width: 60%;
                 height: 50px;
                 padding: auto;
 //                margin-top: 10px;
@@ -210,10 +210,11 @@ input[type="button"] {
             input[type="button"] {
                 float: right;
                 position: relative;
-                width: 35%;
+                width: 40%;
                 height: 50px;
+//                text-align: center;
                 vertical-align: bottom;
-                padding-left: 8%;
+                padding-right: auto;
 
             }
             .text {
