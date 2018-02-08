@@ -15,7 +15,12 @@ if (a>0 && b>0 && c>0) {
         } else if (a!=b && b!=c && a!=c) {
             type = "scalene";
         }
-        square = Math.sqrt(half*(half-a)*(half-b)*(half-c));
-        console.log("Type of triangle is " + type + " triangle and square is " + square.toFixed(2));
+        square = (Math.sqrt(half*(half-a)*(half-b)*(half-c))).toFixed(2);
+        if ((square*100)%10==0 && (square*10)%10==0) {
+            square = Number(square).toFixed(0);
+        } else if ((square*100)%10==0) {
+            square = Number(square).toFixed(1);
+        }
+        console.log("Type of triangle is " + type + " triangle and square is " + square);
     } else console.log("Incorrect data");
 } else console.log("Incorrect data");
