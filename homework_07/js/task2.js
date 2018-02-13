@@ -11,8 +11,8 @@ let range = 5,
 if (start) {
     while (start) {
         while (cont) {
+            random = Math.floor(Math.random()*(range+1));
             for (attempts = 3; attempts>0; attempts--) {
-                random = Math.floor(Math.random()*(range+1));
                 console.log(random);
                 userGuess = Number(prompt(`Enter a number from 0 to ${range}\nAttempts left: ${attempts}\nTotal prize: ${totalPrize}$\nPossible prize on current attempt: ${currentPrize}$`, "0"));
                 if (userGuess == random) {
@@ -21,6 +21,7 @@ if (start) {
                     attempts=4;
                     totalPrize+=currentPrize;
                     currentPrize=prize;
+                    random = Math.floor(Math.random()*(range+1));
                     cont = confirm("Do you want to continue?");
                     if (!cont) {
                         break;
