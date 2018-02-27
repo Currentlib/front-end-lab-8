@@ -1,0 +1,30 @@
+body, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none
+}
+
+.empty {
+  display: none;
+}
+
+.name, .file {
+  cursor: pointer;
+}
+
+.name:hover, .file:hover {
+  background-color: gray;
+}
+
+.newUl {
+  margin-left: 10px;
+  display: none;
+}
+
+.folder.open > .newUl,
+.folder.open > .empty {
+  display: block;
+}
