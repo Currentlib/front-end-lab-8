@@ -18,16 +18,18 @@ function createElement (elem, className, text) {
 //opening uuuuuuuuhhhhhhhhhhhhhhhhhh
 
 
-//function isOpen() {
-//    if (!this.isOpened) {
-//        this.isOpened = true;
-//        this.setAttribute('class', 'open');
-//    } else {
-//        this.isOpened = false;
-//        this.removeAttribute('class');
-//        this.setAttribute('class', 'name');
+function isOpen() {
+//    let opened = false;
+    if (!this.isOpened) {
+        opened = true;
+        this.isOpened = true;
+        this.classList.add('open');
+    }
+//    if (opened) {
+//        opened = false;
+//        this.classList.remove('open');
 //    }
-//}
+}
 //parsing
 function parse(struct) {
     var ul = document.createElement('ul');
@@ -36,7 +38,7 @@ function parse(struct) {
             var li = createElement('li', 'folder');
             var name = createElement('p', 'name', struct[i].title);
             let isOpened = false;
-//            name.addEventListener('click', isOpen);
+            li.addEventListener('click', isOpen);
             li.appendChild(name);
         } else {
             if (struct[i].title) {
