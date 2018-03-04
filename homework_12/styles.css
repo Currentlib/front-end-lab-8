@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1e;
+}
+
+#root {
+  padding-left: 15px;
+  font-weight: bold;
+}
+#root p {
+  font-size: 30px;
+  color: #a19e89;
+}
+#root .block {
+  text-transform: uppercase;
+  color: #a19e89;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+}
+#root .block:hover {
+  background-color: #2c2c2c;
+}
+#root .block p {
+  color: #d6d1ba;
+}
+#root .block img {
+  width: inherit;
+}
+#root .block div {
+  margin: 0 auto 0 auto;
+}
+#root .block div p {
+  display: inline-block;
+  font-size: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 150px;
+  margin: 0 0 0 8px;
+  vertical-align: bottom;
+  text-align: left;
+}
+#root .block div span {
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 8px;
+}
+#root .main_header img {
+  margin-left: 5px;
+}
+#root .main_header p {
+  display: inline-block;
+  margin-left: 5px;
+}
+#root .main_header .name {
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+#root .content {
+  width: 100%;
+  color: #a19e89;
+}
+#root .content .preview {
+  vertical-align: top;
+  display: inline-block;
+  width: 39%;
+  margin: 0;
+}
+#root .content .preview img {
+  width: 100%;
+}
+#root .content .preview p {
+  margin-top: 0;
+  font-size: 25px;
+}
+#root .content .characteristic {
+  vertical-align: top;
+  margin: 0;
+  display: inline-block;
+  width: 59%;
+}
+#root .content .characteristic table {
+  font-weight: 100;
+  border-collapse: collapse;
+  width: 100%;
+}
+#root .content .characteristic table, #root .content .characteristic tr, #root .content .characteristic td {
+  border: 1px solid white;
+}
+#root .content .characteristic td {
+  padding: 5px;
+}
+#root .content .characteristic p {
+  margin-top: 0;
+  font-size: 25px;
+}
+#root a {
+  text-decoration: none;
+  font-weight: 100;
+  color: #a19e89;
+}
+
+/*# sourceMappingURL=styles.css.map */

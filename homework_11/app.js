@@ -18,17 +18,10 @@ function createElement (elem, className, text) {
 //opening uuuuuuuuhhhhhhhhhhhhhhhhhh
 
 
-function isOpen() {
-//    let opened = false;
-    if (!this.isOpened) {
-        opened = true;
-        this.isOpened = true;
-        this.classList.add('open');
-    }
-//    if (opened) {
-//        opened = false;
-//        this.classList.remove('open');
-//    }
+function open() {
+    this.classList.add('open');
+    isClosed = true;
+
 }
 //parsing
 function parse(struct) {
@@ -37,8 +30,8 @@ function parse(struct) {
         if (struct[i].folder) {
             var li = createElement('li', 'folder');
             var name = createElement('p', 'name', struct[i].title);
-            let isOpened = false;
-            li.addEventListener('click', isOpen);
+            let isClosed = true;
+            li.addEventListener('click', open);
             li.appendChild(name);
         } else {
             if (struct[i].title) {
