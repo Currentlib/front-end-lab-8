@@ -1,3 +1,5 @@
+let root = document.getElementById('root');
+
 function switching() {
     switch(location.hash) {
         case '#Object-140':
